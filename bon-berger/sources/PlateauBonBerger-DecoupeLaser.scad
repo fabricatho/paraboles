@@ -8,7 +8,7 @@ plateau_diametre   = 290;   // mm  — diamètre du plateau - un seul morceau da
 plateau_epaisseur  = 6;     // mm  — épaisseur du panneau de contreplaqué
 
 /* ---- PARAMÈTRES POTEAUX ---- */
-poteau_hauteur      = 70;   // mm  — hauteur totale du poteau 
+poteau_hauteur      = 45;   // mm  — hauteur totale du poteau 
 poteau_section     = plateau_epaisseur;   // mm  — poteau à section carrée
 trou_ficelle        = 1.1;  // mm  — diamètre du trou pour la ficelle
 emplacement_trou = 10; // mm emplacement du centre du trou en partant du haut du poteau
@@ -56,7 +56,7 @@ module poteau() {
     cube([poteau_section,poteau_section,poteau_hauteur]);
      } 
      
-
+//poteau();
 
      
 module poteau_troue() {
@@ -68,8 +68,7 @@ module poteau_troue() {
         } 
     } 
 
-    
-//translate ([-250,0,0])    
+     
 //poteau_troue();
     
     // Export pour svg
@@ -82,7 +81,7 @@ module poteau_troue() {
     module poteau_couche(){
     rotate([90,0,0])
     poteau_troue();
-        } 
+      } 
         //poteau_couche();
         
    projection(cut = true)  

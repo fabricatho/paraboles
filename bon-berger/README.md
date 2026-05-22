@@ -1,18 +1,23 @@
 # Plateau Parabole du Bon Berger
 
 ## Impression 3 D
-Imprimer Un berger, 6 moutons A et 6 moutons B
+Imprimer =
+- 1 berger
+- 6 moutons A
+- 6 moutons B
 
-Dimensions : 
-Berger : 143 mm de haut
-Mouton A (tête en bas) : 50 mm de haut environ
-Mouton B (tête en haut) : 58 mm de haut environ
 
 
 ## Découpe Laser du plateau
-Plateau avec 11 poteaux : plateaux_avec_11poteaux.svg
+Découper un plateau et 11 poteaux.
+En bois de 5 mm d'épaisseur.
 
-un cercle troué et 11 poteaux troués eux-aussi pour faire passer la ficelle = la clôture.
+Plateau avec 11 poteaux : plateaux_avec_11poteaux.svg
+ou plateau.svg
+poteau.svg
+
+
+Les poteaux sont troués pour faire passer une ficelle = la clôture.
 
 
 
@@ -22,3 +27,11 @@ un cercle troué et 11 poteaux troués eux-aussi pour faire passer la ficelle = 
 Le projet en est à ses débuts. Les fichiers n'ont pas encore été tous testés.
 
 Les retours d'utilisateurs sont attendus !
+
+# Aperçu du matériel en bois artisanal
+
+<img src="images/Plateau-Bon-Berger-Artisanal.png" width="400">
+
+# Aperçu Blender du matériel 3D
+
+<img src="images/rendu.png" width="400">
