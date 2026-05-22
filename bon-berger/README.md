@@ -35,3 +35,7 @@ Les retours d'utilisateurs sont attendus !
 # Aperçu Blender du matériel 3D
 
 <img src="images/rendu.png" width="400">
+
+# Aperçu Blender de l'ajout d'une deuxième ficelle dans la clôture
+
+<img src="images/Vue-2-ficelles.png" width="400">

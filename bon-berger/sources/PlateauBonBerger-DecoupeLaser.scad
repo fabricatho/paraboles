@@ -12,6 +12,7 @@ poteau_hauteur      = 45;   // mm  — hauteur totale du poteau
 poteau_section     = plateau_epaisseur;   // mm  — poteau à section carrée
 trou_ficelle        = 1.1;  // mm  — diamètre du trou pour la ficelle
 emplacement_trou = 10; // mm emplacement du centre du trou en partant du haut du poteau
+emplacement_trou_2 = 30; // mm — deuxième trou, à ajuster
 
 
 // jeu pour l'emboîtement poteau dans le plateau
@@ -62,12 +63,16 @@ module poteau() {
 module poteau_troue() {
     difference() {
         poteau();
+        // Trou du haut
         rotate ([90,0,0])
-      translate ([poteau_section/2,poteau_hauteur-emplacement_trou,-(poteau_section+epsilon)])  
-     cylinder(h=poteau_section+2*epsilon,r=trou_ficelle,$fn=64);
-        } 
+        translate ([poteau_section/2, poteau_hauteur-emplacement_trou, -(poteau_section+epsilon)])  
+        cylinder(h=poteau_section+2*epsilon, r=trou_ficelle, $fn=64);
+        // Trou du bas
+        rotate ([90,0,0])
+        translate ([poteau_section/2, poteau_hauteur-emplacement_trou_2, -(poteau_section+epsilon)])  
+        cylinder(h=poteau_section+2*epsilon, r=trou_ficelle, $fn=64);
     } 
-
+}
      
 //poteau_troue();
     
